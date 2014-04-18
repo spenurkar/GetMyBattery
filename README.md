@@ -1,4 +1,4 @@
 GetMyBattery
 ============
 
-My workspace
+Gets Battery and Device Memory related data.
