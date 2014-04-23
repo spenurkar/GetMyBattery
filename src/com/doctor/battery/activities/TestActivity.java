@@ -31,16 +31,16 @@ public class TestActivity extends BatteryUpdateReceiverActivity {
 
 		// Testing
 		textView.append("\n-------------------\n");
-		textView.append("\nExternal Memory :"
+		textView.append("\nExternal Memory \n(Available/Total) : "
 				+ MemoryUtils.getAvailableExternalMemorySize() + "/"
 				+ MemoryUtils.getTotalExternalMemorySize());
-		textView.append("\nInternal Memory :"
+		textView.append("\n\nInternal Memory \n(Available/Total) : "
 				+ MemoryUtils.getAvailableInternalMemorySize() + "/"
 				+ MemoryUtils.getTotalInternalMemorySize());
 
-		textView.append("\nDevice RAM :"+MemoryUtils.getDeviceRam());
+		textView.append("\n\nDevice RAM : "+MemoryUtils.getDeviceRam());
 		
-		MemoryUtils.testMemoryInfo(this);
+		//MemoryUtils.testMemoryInfo(this);
 	}
 
 }
