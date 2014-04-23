@@ -8,6 +8,7 @@ import android.content.IntentFilter;
 import android.os.BatteryManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 public abstract class BatteryUpdateReceiverActivity extends Activity {
 
@@ -138,6 +139,7 @@ public abstract class BatteryUpdateReceiverActivity extends Activity {
 			status = "Discharge";
 			break;
 		case BatteryManager.BATTERY_STATUS_FULL:
+			Toast.makeText(this, "battery full", Toast.LENGTH_LONG).show();
 			status = "Full";
 			break;
 		case BatteryManager.BATTERY_STATUS_NOT_CHARGING:
